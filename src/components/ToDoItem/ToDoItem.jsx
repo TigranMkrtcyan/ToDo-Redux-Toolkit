@@ -37,7 +37,7 @@ const ToDoItem = ({ todo }) => {
                     <span className={todo.completed ? style.line : style.title}>{edittext}</span>
             }
             <div className= {style.btns}>
-                <button onClick={() => setEdit(!edit)} className={style.delete}>{edit ? "Save" : "Edit"}</button>
+                <button onClick={() => setEdit(!edit)} className={style.edit}>{edit ? "Save" : "Edit"}</button>
                 <button onClick={() => remove(todo.id)} className={style.delete}>Delete</button>
             </div>
         </div>
